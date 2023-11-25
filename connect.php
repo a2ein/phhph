@@ -7,7 +7,7 @@
 	$number = $_POST['number'];
 
 	// Database connection
-	$conn = new mysqli('%','n','','validationform');
+	$conn = new mysqli('netlify','n','','validationform');
 	if($conn->connect_error){
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
